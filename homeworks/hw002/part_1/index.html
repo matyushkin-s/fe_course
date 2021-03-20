@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список покупок</title>
+  </head>
+  <body>
+    <header>
+      <h1>Покупки в магазине</h1>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Выбери дату</legend>
+          <input type="date" name="date" id="q0_1" /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Когда идем за покупками?</legend>
+          <input type="radio" value="morning" id="q1_1" name="q1" />
+          <label for="q1_1">утром</label>
+          <input type="radio" value="dnem" id="q1_2" name="q1" />
+          <label for="q1_2">днем</label>
+          <input type="radio" value="vecherom" id="q1_3" name="q1" />
+          <label for="q1_3">вечером</label>
+          <input type="radio" value="nochiyu" id="q1_4" name="q1" />
+          <label for="q1_4">ночью</label>
+          <input type="radio" value="ne idem" id="q1_5" name="q1" disabled />
+          <label for="q1_5">никуда не пойду</label>
+        </fieldset>
+        <fieldset>
+          <legend>Что покупаем?</legend>
+          <table>
+            <!-- testing some new words here -->
+            <thead>
+              <tr>
+                <th>Мясо и пр</th>
+                <th>Каши</th>
+                <th>Овощи и тд</th>
+                <th>Фрукты</th>
+                <th>Сладюхи</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" name="q2_11" id="q2_11" /><label
+                    for="q2_11"
+                    >Свинина</label
+                  >
+                  <!-- <br><label for="quantity">кг</label><input type="number" id="quantityq2_11" name="quantity" min="0" max="10"> -->
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_12" id="q2_12" /><label
+                    for="q2_12"
+                    >Гречка</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_13" id="q2_13" /><label
+                    for="q2_13"
+                    >Картошка</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_14" id="q2_14" /><label
+                    for="q2_14"
+                    >Апельсины</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_15" id="q2_15" /><label
+                    for="q2_15"
+                    >Печеньки</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="q2_21" id="q2_21" /><label
+                    for="q2_21"
+                    >Говядина</label
+                  >
+                  <!-- <br><input type="range" min="0" max="10" name="skolko"> -->
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_22" id="q2_22" /><label
+                    for="q2_22"
+                    >Рис</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_23" id="q2_23" /><label
+                    for="q2_23"
+                    >Лук</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_24" id="q2_24" /><label
+                    for="q2_24"
+                    >Яблоки</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_25" id="q2_25" /><label
+                    for="q2_25"
+                    >Шоколад</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="q2_31" id="q2_31" /><label
+                    for="q2_31"
+                    >Курица</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_32" id="q2_32" /><label
+                    for="q2_32"
+                    >Пшеничная</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_33" id="q2_33" /><label
+                    for="q2_33"
+                    >Огурец</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_34" id="q2_34" /><label
+                    for="q2_34"
+                    >Груши</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_35" id="q2_35" /><label
+                    for="q2_35"
+                    >Батончики</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" name="q2_41" id="q2_41" /><label
+                    for="q2_41"
+                    >Другое</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_42" id="q2_42" /><label
+                    for="q2_42"
+                    >Кус-кус</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_43" id="q2_43" /><label
+                    for="q2_43"
+                    >Помидор</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_44" id="q2_44" /><label
+                    for="q2_44"
+                    >Бананы</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_45" id="q2_45" /><label
+                    for="q2_45"
+                    >Конфеты</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="checkbox"
+                    name="q2_51"
+                    id="q2_51"
+                    disabled
+                  /><label for="q2_51">Колбаса</label>
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_52" id="q2_52" /><label
+                    for="q2_52"
+                    >Другая</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_53" id="q2_53" /><label
+                    for="q2_53"
+                    >Паприка</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_54" id="q2_54" /><label
+                    for="q2_54"
+                    >Ананас</label
+                  >
+                </td>
+                <td>
+                  <input type="checkbox" name="q2_55" id="q2_55" /><label
+                    for="q2_55"
+                    >Зефир</label
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>18+</legend>
+          <label for="q3_1">Берем алкоголь?</label>
+          <select name="Berem_alko" id="q3_1">
+            <option value="YES">Да</option>
+            <option value="NO" selected>Нет</option>
+          </select>
+          <br />
+          <br />
+          <label for="q3_2">Какой?</label>
+          <select name="Kakoi_alko" id="q3_2">
+            <option value="whiskey">Виски</option>
+            <option value="wine">Вино</option>
+            <option value="gin">Джин</option>
+            <option value="cognac">Коньяк</option>
+            <option value="vodka">Водка</option>
+            <option value="beer">Пиво</option>
+            <option value="nothing" selected disabled>выбрать напиток</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Комментарии</legend>
+          <textarea name="comments" id="c1" cols="50" rows="5">
+Ваш комментарий очень важен для нас</textarea
+          >
+        </fieldset>
+        <br />
+        <!-- <input type="submit" value="Отправить"> -->
+        <button type="submit">Подтвердить</button>
+      </form>
+    </main>
+    <footer>
+      <nav>
+        <p>
+          <a href="../part_2/navigation.html"
+            >Перейти к следующей части домашнего задания</a
+          >
+        </p>
+      </nav>
+    </footer>
+  </body>
+</html>
