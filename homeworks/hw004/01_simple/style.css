@@ -1,0 +1,31 @@
+h1 {
+  background-color: #a52a2a;
+}
+main {
+  font-size: 18px;
+}
+
+table {
+  margin-left: 25%;
+}
+
+td {
+  border: 3px dashed black;
+}
+
+.white_text {
+  color: #fff;
+  text-align: center;
+}
+.blue_text {
+  color: #00f;
+}
+
+footer {
+  background-color: #000;
+  font-size: 20px;
+}
+
+#strong {
+  font-weight: bolder;
+}
