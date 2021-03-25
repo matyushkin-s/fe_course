@@ -1,0 +1,28 @@
+body {
+  background-color: #990909;
+}
+main {
+  font-size: 18px;
+}
+
+header > nav {
+  background-color: #000;
+  padding-top: 21px;
+}
+
+td {
+  text-align: center;
+  width: 600px;
+}
+
+.white_text {
+  color: #fff;
+}
+.blue_text {
+  color: #00f;
+}
+
+footer {
+  background-color: #e95b11;
+  font-size: 20px;
+}
