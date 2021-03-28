@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: \'Trebuchet MS\', Trebuchet, Arial, sans-serif;
+  color: #eb7e78;
+  transition: all 0.1s ease-in;
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  border: 24px solid white;
+  background-color: #3b3f45;
+}
+
+header {
+  background-color: #4a4f56;
+  height: 117px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  display: inline-block;
+  text-transform: capitalize;
+  /* font-size: 33px; */
+  margin: 29px auto 11px;
+}
+
+ul {
+  margin: 40px auto;
+  font-size: 24px;
+}
+
+li {
+  display: inline-block;
+  width: 800px;
+  height: 64px;
+  text-align: left;
+  background-color: #88839e;
+}
+
+li:nth-of-type(even) {
+  background-color: #7a7593;
+}
+
+li:hover {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+li:active {
+  background-color: #eb7e7f;
+}
+
+label {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+li * {
+  color: #f9f9f9;
+}
+
+span {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+span::before {
+  content: " ( ";
+}
+
+span::after {
+  content: " )";
+}
+
+button {
+  border-style: none;
+  width: 800px;
+  height: 64px;
+  background-color: #4a4f56;
+  font-size: 24px;
+}
+
+button:active {
+  background-color: #88839e;
+}
+
+input {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+/* .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  border: 2px solid gray;
+  border-radius: 1px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+}
+
+.custom-checkbox:checked + label::before {
+  background-image: url(icon.png);
+} */
