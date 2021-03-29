@@ -49,7 +49,7 @@ main {
 }
 
 li {
-  width: 24%;
+  width: 238px;
   display: inline-block;
   border: 1px solid #ececec;
 }
@@ -78,22 +78,6 @@ li {
   background-image: url(icons/Monitor.png);
 }
 
-#img1:hover {
-  background-image: url(icons/Anchor1.png);
-}
-
-#img2:hover {
-  background-image: url(icons/Diamond1.png);
-}
-
-#img3:hover {
-  background-image: url(icons/Eyeglasses1.png);
-}
-
-#img4:hover {
-  background-image: url(icons/Monitor1.png);
-}
-
 li > h2 {
   font-size: 21px;
   font-style: normal;
@@ -117,4 +101,20 @@ li > span {
 li:hover {
   background-color: #0ec8cb;
   color: white;
+}
+
+li:hover #img1 {
+  background-image: url(icons/Anchor1.png);
+}
+
+li:hover #img2 {
+  background-image: url(icons/Diamond1.png);
+}
+
+li:hover #img3 {
+  background-image: url(icons/Eyeglasses1.png);
+}
+
+li:hover #img4 {
+  background-image: url(icons/Monitor1.png);
 }
