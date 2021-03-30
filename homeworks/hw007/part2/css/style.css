@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  color: white;
+  text-align: center;
+  font-family: "Open sans", sans-serif;
+  transition: all 0.1s ease-in;
+}
+
+article {
+  box-sizing: border-box;
+  border: 2vh solid #2b81ac;
+  background: #3399cc;
+  height: 100vh;
+  text-decoration: none;
+}
+
+main {
+  display: inline-block;
+  width: 65%;
+  border: 3px solid white;
+  /* background-color: white; */
+}
+
+li {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 3px solid black;
+  width: 25%;
+  font-size: 16px;
+}
+
+li:first-child {
+  width: 50%;
+}
+
+li:nth-last-of-type(3) {
+  width: 50%;
+}
+
+li:last-child {
+  width: 100%;
+}
