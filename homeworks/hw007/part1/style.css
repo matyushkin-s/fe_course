@@ -29,6 +29,8 @@ h1 {
   line-height: 59px;
   letter-spacing: 5px;
   color: #0ec8cb;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .second {
@@ -41,6 +43,7 @@ h1 {
   letter-spacing: 0em;
   color: #999999;
   width: 80%;
+  margin-bottom: 90px;
 }
 
 main {
@@ -50,6 +53,7 @@ main {
 
 li {
   width: 238px;
+  height: 438px;
   display: inline-block;
   border: 1px solid #ececec;
 }
@@ -60,6 +64,7 @@ li {
   height: 75px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 55px;
 }
 
 #img1 {
@@ -79,12 +84,16 @@ li {
 }
 
 li > h2 {
+  display: inline-block;
   font-size: 21px;
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
   text-transform: uppercase;
+  width: 75%;
+  height: 52px;
+  margin-top: 50px;
 }
 
 li > span {
@@ -96,6 +105,7 @@ li > span {
   line-height: 22px;
   letter-spacing: 0em;
   width: 75%;
+  margin-top: 30px;
 }
 
 li:hover {
