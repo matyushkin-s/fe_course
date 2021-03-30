@@ -56,6 +56,8 @@ li {
   height: 438px;
   display: inline-block;
   border: 1px solid #ececec;
+  /* teacher`s advise: */
+  vertical-align: middle;
 }
 
 .img {
@@ -92,7 +94,8 @@ li > h2 {
   letter-spacing: 0em;
   text-transform: uppercase;
   width: 75%;
-  height: 52px;
+  color: #1b1b1b;
+  /* height: 52px; */
   margin-top: 50px;
 }
 
@@ -106,10 +109,14 @@ li > span {
   letter-spacing: 0em;
   width: 75%;
   margin-top: 30px;
+  color: #777777;
 }
 
 li:hover {
   background-color: #0ec8cb;
+}
+
+li:hover * {
   color: white;
 }
 
