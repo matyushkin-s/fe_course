@@ -1,2 +1,12 @@
-* {font-family: 'Raleway', sans-serif;
+* {
+  font-family: "Raleway", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.container {
+  width: 1120px;
+}
+
+.col-4 {
+  background-color: rgb(158, 30, 30);
 }
