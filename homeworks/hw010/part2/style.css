@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.block-contacts {
+  min-width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: rgba(60, 60, 60, 1);
+  box-sizing: border-box;
+  padding: 6vw 12.2vw;
+}
+
+.block-contacts__header {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.2em;
+}
+
+.block-contacts__header::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 45px;
+  height: 4px;
+  background: #dddbdb;
+  margin: 10px auto 30px;
+}
+
+.block-contacts__subheader {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  width: 45%;
+}
+
+.block-contacts__photo-cards {
+  margin-top: 84px;
+}
+
+.photo-cards {
+  display: block;
+}
+
+.photo-cards__inside {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  padding: 6px 6px 0;
+  display: block;
+  text-align: left;
+  margin: 0 8px 16px;
+}
+
+/* .photo-card:not(:last-child) {
+  margin-right: 17px;
+} убрал ради ровного выравнивания при уменьшении ширины
+добавил margin с двух сторон */
+
+.photo-card__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: rgba(40, 37, 40, 1);
+  margin-top: 16px;
+}
+
+.photo-card__job {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: rgba(100, 100, 100, 1);
+  margin-bottom: 8px;
+}
+
+.photo-card__userpic {
+  display: flex;
+  height: 269px;
+  width: 269px;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-card__userpic-smm {
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+}
+
+.photo-card__userpic-smm:not(:last-child) {
+  margin-right: 4px;
+}
+
+.userpic1 {
+  background: url(img/Photo1.jpg) center center no-repeat;
+}
+
+.userpic2 {
+  background: url(img/Photo2.jpg) center center no-repeat;
+}
+
+.userpic3 {
+  background: url(img/Photo3.jpg) center center no-repeat;
+}
+
+.userpic4 {
+  background: url(img/Photo4.jpg) center center no-repeat;
+}
+
+.smm-tw {
+  background: url(img/Twitter.png) center center no-repeat;
+}
+.smm-fb {
+  background: url(img/Facebook.png) center center no-repeat;
+}
+.smm-g {
+  background: url(img/Google.png) center center no-repeat;
+}
+
+.photo-card__userpic:hover {
+  background: #00aed9;
+}
+
+.photo-card__userpic:hover .photo-card__userpic-smm {
+  z-index: 2;
+}
+
+.photo-card:hover {
+  box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card__userpic-smm:hover::after {
+  content: "По ссылкам лучше не переходить, можно потерять много времени";
+  position: absolute;
+  top: 54px;
+  left: -42px;
+  width: 120px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 3px 3px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
