@@ -13,32 +13,58 @@
     <title>Cahee_2 первые секции</title>
   </head>
   <body>
-    <section class="first_screen">
+    <section class="section first_screen" id="section_first_screen">
       <div class="first_screen__content">
         <header class="first_screen__header">
           <a class="logo" href="#"></a>
-          <nav class="menu">
+          <nav class="menu first_screen__header_menu">
             <ul class="menu_items">
               <li class="menu_item">
-                <a class="menu_item__text menu_item__text--active" href="#">HOME</a>
+                <a class="menu_item__text menu_item__text--active" href="#section_first_screen"
+                  >HOME</a
+                >
               </li>
-              <li class="menu_item"><a class="menu_item__text" href="#1">ABOUT</a></li>
-              <li class="menu_item"><a class="menu_item__text" href="#2">SERVICES</a></li>
-              <li class="menu_item"><a class="menu_item__text" href="#3">GALLERY</a></li>
-              <li class="menu_item"><a class="menu_item__text" href="#4">BLOG</a></li>
-              <li class="menu_item"><a class="menu_item__text" href="#5">CONTACT</a></li>
+              <li class="menu_item">
+                <a class="menu_item__text" href="#section_about_us">ABOUT</a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_item__text" href="#">SERVICES</a>
+              </li>
+              <li class="menu_item"><a class="menu_item__text" href="#">GALLERY</a></li>
+              <li class="menu_item"><a class="menu_item__text" href="#">BLOG</a></li>
+              <li class="menu_item"><a class="menu_item__text" href="#">CONTACT</a></li>
             </ul>
           </nav>
         </header>
-        <h1 class="h1">Fresh Life</h1>
-        <p class="paragraph first_screen__paragraph">
-          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco.
-        </p>
-        <button class="button">GET FREE NOW</button>
+        <div class="section_text first_screen__text">
+          <h1 class="h1">Fresh Life</h1>
+          <p class="paragraph first_screen__paragraph">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco.
+          </p>
+          <button class="button">GET FREE NOW</button>
+        </div>
       </div>
-      <a class="scroll_icon first_screen__content__scroll-icon" href="#"></a>
+      <a
+        class="scroll_icon first_screen__content__scroll-icon"
+        href="#section_about_us"
+        id="scroll_icon"
+      ></a>
     </section>
-    <section class="about_us"></section>
+    <section class="section about_us" id="section_about_us">
+      <img class="about_us__img" src="img/plate.png" alt="plate photo" />
+      <div class="section_text about_us__text">
+        <h2 class="about_us__h">About Us</h2>
+        <p class="paragraph about_us__paragraph">
+          Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum.
+        </p>
+        <p class="paragraph about_us__paragraph">
+          Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
