@@ -19,14 +19,13 @@
 
 .first_screen {
   height: 100vh;
-  background: url(../img/BG.jpg) center center;
+  background: url(../img/BG.jpg) center center no-repeat;
+  background-size: cover;
   padding-top: 5vh;
 }
 
 .first_screen * {
   color: rgba(38, 38, 38, 1);
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
 }
 
 .first_screen__content {
