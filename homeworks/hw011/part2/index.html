@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lesson 11: Nike</title>
+  </head>
+  <body>
+    <div class="shop">
+      <article class="shop__productcard productcard">
+        <div class="logo productcard__logo"></div>
+        <div class="image-part productcard__image-part">
+          <ul class="photocolors image-part__photocolors">
+            <li class="photocolor photocolor__black photocolor--active">
+              <span class="photo1"></span>
+            </li>
+            <li class="photocolor photocolor__white"><span class="photo2"></span></li>
+            <li class="photocolor photocolor__red"><span class="photo3"></span></li>
+            <li class="photocolor photocolor__smthlikegreen"><span class="photo4"></span></li>
+          </ul>
+          <!-- <div class="photo" id="photo"></div> -->
+        </div>
+        <div class="characteristics productcard__characteristics">
+          <h2 class="characteristics__h2">Nike SB Stefan Janovski Max</h2>
+          <span class="characteristics__subheader">Unisex Skateboarding Shoe</span>
+          <div class="rating">
+            <!--elements are in reversed order, to allow "previous sibling selectors" in CSS-->
+            <input type="radio" name="rating" value="5" id="5" /><label for="5">&#9733;</label>
+            <input type="radio" name="rating" value="4" id="4" /><label for="4">&#9733;</label>
+            <input type="radio" name="rating" value="3" id="3" /><label for="3">&#9733;</label>
+            <input type="radio" name="rating" value="2" id="2" /><label for="2">&#9733;</label>
+            <input type="radio" name="rating" value="1" id="1" /><label for="1">&#9733;</label>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>

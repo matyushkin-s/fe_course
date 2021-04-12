@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.shop * {
+  font-family: "Museo Sans Rounded", sans-serif;
+  font-weight: 100;
+}
+
+.shop {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/BG.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 99px 57px 0;
+  box-sizing: border-box;
+}
+
+.productcard {
+  position: relative;
+  box-sizing: border-box;
+  width: 686px;
+  height: 391px;
+  background: rgba(17, 26, 40, 1);
+  border-radius: 10px;
+  box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+  color: rgba(225, 225, 225, 1);
+}
+
+.logo {
+  width: 65px;
+  height: 33px;
+  background: url(../img/Logo.png);
+}
+
+.productcard__logo {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.photocolors {
+  list-style: none;
+  display: flex;
+}
+
+.photocolor {
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border-radius: 4.5px;
+}
+
+.photocolor:not(:last-child) {
+  margin-right: 5px;
+}
+
+.photocolor__black {
+  background: rgba(31, 39, 63, 1);
+}
+
+.photocolor__white {
+  background: rgba(255, 255, 255, 1);
+}
+
+.photocolor__red {
+  background: rgba(237, 51, 51, 1);
+}
+
+.photocolor__smthlikegreen {
+  background: rgba(41, 227, 234, 1);
+}
+
+/* .photocolor--active {
+  border: 1px solid rgba(126, 131, 139, 1);
+} */
+
+.image-part__photocolors {
+  position: absolute;
+  bottom: 30px;
+  left: 177px;
+}
+
+/* .photo {
+  height: 159px;
+  width: 329px;
+  background: url(../img/Sneakers.png);
+} */
+
+.photocolor:hover {
+  border: 1px solid rgba(126, 131, 139, 1);
+  cursor: pointer;
+}
+
+.photo1 {
+  display: inline-block;
+  height: 159px;
+  width: 329px;
+  background: url(../img/Sneakers.png);
+  position: absolute;
+  left: -135px;
+  bottom: 120px;
+}
+
+.photocolor__red:hover .photo3 {
+  display: inline-block;
+  height: 159px;
+  width: 329px;
+  background: url(../img/Sneakers_red.png);
+  position: absolute;
+  left: -135px;
+  bottom: 120px;
+}
+
+.photocolor__white:hover .photo2 {
+  display: inline-block;
+  height: 159px;
+  width: 329px;
+  background: url(../img/Sneakers_white.png);
+  position: absolute;
+  left: -135px;
+  bottom: 120px;
+}
+
+.photocolor__smthlikegreen:hover .photo4 {
+  display: inline-block;
+  height: 159px;
+  width: 329px;
+  background: url(../img/Sneakers_41.png);
+  position: absolute;
+  left: -135px;
+  bottom: 120px;
+}
+
+.characteristics {
+}
+
+.productcard__characteristics {
+  position: absolute;
+  top: 69px;
+  right: 60px;
+  width: 184px;
+}
+
+/* MY OLD CODE
+ .rating_star {
+list-style: none;
+display: flex;
+}
+
+.rating_star {
+display: inline-block;
+width: 12px;
+height: 12px;
+margin-right: 1px;
+background: url(../img/Star_grey.png);
+}
+
+.rating_star:hover  {
+  background: url(../img/Star_gold.png);
+  }
+.rating_star--active {
+  background: url(../img/Star_gold.png);
+} */
+
+/*shows the stars side by side, centered, and in reverse order than the HMTL*/
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+/*hides the radio buttons*/
+.rating > input {
+  display: none;
+}
+
+/*style the empty stars, sets position:relative as base for pseudo-elements*/
+.rating > label {
+  position: relative;
+  width: 12px;
+  font-size: 12px;
+  color: #9da1a7;
+  cursor: pointer;
+}
+
+.rating > label::first-letter {
+}
+
+/* sets filled star pseudo-elements */
+.rating > label::before {
+  content: "\2605";
+  color: #ffd700;
+  position: absolute;
+  opacity: 0;
+}
+/*overlays a filled start character to the hovered element and all previous siblings*/
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+/*overlays a filled start character on the selected element and all previous siblings*/
+.rating > input:checked ~ label:before {
+  opacity: 1;
+}
+
+/*when an element is selected and pointer re-enters the rating container, selected rate and siblings get semi transparent, as reminder of current selection*/
+.rating:hover > input:checked ~ label:before {
+  opacity: 0.4;
+}
