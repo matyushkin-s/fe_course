@@ -13,15 +13,37 @@
       <article class="shop__productcard productcard">
         <div class="logo productcard__logo"></div>
         <div class="image-part productcard__image-part">
-          <ul class="photocolors image-part__photocolors">
-            <li class="photocolor photocolor__black photocolor--active">
-              <span class="photo1"></span>
-            </li>
-            <li class="photocolor photocolor__white"><span class="photo2"></span></li>
-            <li class="photocolor photocolor__red"><span class="photo3"></span></li>
-            <li class="photocolor photocolor__smthlikegreen"><span class="photo4"></span></li>
-          </ul>
+          <!-- <div class="photocolors image-part__photocolors">
+            <input type="radio" name="photocolor" value="black" id="black" />
+            <label class="photo1 photocolor__black photocolor--active" for="black"
+              ><span class="photo1__pic"></span
+            ></label>
+            <input type="radio" name="photocolor" value="white" id="white" /><label
+              class="photo2 photocolor__white"
+              for="white"
+            ></label>
+
+            <input type="radio" name="photocolor" value="red" id="red" /><label
+              class="photo3 photocolor__red"
+              for="red"
+            ></label>
+
+            <input type="radio" name="photocolor" value="smthlikegreen" id="smthlikegreen" /><label
+              class="photo4 photocolor__smthlikegreen"
+              for="smthlikegreen"
+            ></label>
+          </div> -->
           <!-- <div class="photo" id="photo"></div> -->
+          <div class="image-part productcard__image-part">
+            <ul class="photocolors image-part__photocolors">
+              <li class="photocolor photocolor__black photocolor--active">
+                <span class="photo1"></span>
+              </li>
+              <li class="photocolor photocolor__white"><span class="photo2"></span></li>
+              <li class="photocolor photocolor__red"><span class="photo3"></span></li>
+              <li class="photocolor photocolor__smthlikegreen"><span class="photo4"></span></li>
+            </ul>
+          </div>
         </div>
         <div class="characteristics productcard__characteristics">
           <h2 class="characteristics__h2">Nike SB Stefan Janovski Max</h2>
@@ -34,6 +56,11 @@
             <input type="radio" name="rating" value="2" id="2" /><label for="2">&#9733;</label>
             <input type="radio" name="rating" value="1" id="1" /><label for="1">&#9733;</label>
           </div>
+          <div class="characteristics__inputs">
+            <input type="" placeholder="Size" />
+            <input type="range" placeholder="Qty" />
+          </div>
+          <button class="button characteristics__button">Add to cart</button>
         </div>
       </article>
     </div>
