@@ -46,20 +46,36 @@
           </div>
         </div>
         <div class="characteristics productcard__characteristics">
-          <h2 class="characteristics__h2">Nike SB Stefan Janovski Max</h2>
-          <span class="characteristics__subheader">Unisex Skateboarding Shoe</span>
+          <h2 class="characteristics__h2">Nike SB Stefan Janovski Max<span class="characteristics__subheader">Unisex Skateboarding Shoe</span></h2>
+          <div class="characteristics__rating">
           <div class="rating">
             <!--elements are in reversed order, to allow "previous sibling selectors" in CSS-->
             <input type="radio" name="rating" value="5" id="5" /><label for="5">&#9733;</label>
             <input type="radio" name="rating" value="4" id="4" /><label for="4">&#9733;</label>
-            <input type="radio" name="rating" value="3" id="3" /><label for="3">&#9733;</label>
+            <input type="radio" name="rating" value="3" id="3" checked/><label for="3">&#9733;</label>
             <input type="radio" name="rating" value="2" id="2" /><label for="2">&#9733;</label>
             <input type="radio" name="rating" value="1" id="1" /><label for="1">&#9733;</label>
           </div>
-          <div class="characteristics__inputs">
-            <input type="" placeholder="Size" />
-            <input type="range" placeholder="Qty" />
           </div>
+          <form class="characteristics__form">
+            <select class="form__select_size" name="select_size" id="select_size">
+              <option value="39"><span class="select-size__text">39</span></option>
+              <option value="40"><span class="select-size__text">40</span></option>
+              <option value="41"><span class="select-size__text">41</span></option>
+              <option value="42"><span class="select-size__text">42</span></option>
+              <option value="43"><span class="select-size__text">43</span></option>
+              <option value="44"><span class="select-size__text">44</span></option>
+              <option value="size" selected disabled><span class="select-size__text">Size</span></option>
+            </select>
+            <select class="form__select_range" type="range" placeholder="Qty">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="quantity" selected disabled>Qty</option>
+            </select>  
+          </form>
           <button class="button characteristics__button">Add to cart</button>
         </div>
       </article>
