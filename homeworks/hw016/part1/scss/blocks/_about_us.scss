@@ -1,0 +1,29 @@
+.about_us {
+  height: 700px;
+  background: radial-gradient(
+      75.02% 160.36% at 50% 50%,
+      rgba(0, 196, 196, 0.9) 0%,
+      rgba(0, 183, 183, 0.9) 32.6%,
+      rgba(0, 173, 173, 0.9) 68.02%,
+      rgba(0, 156, 156, 0.9) 100%
+    ),
+    linear-gradient(0deg, #00c4c4, #00c4c4);
+  color: $color-text-white;
+
+  & div {
+    height: 100%;
+  }
+
+  & > .container {
+    background: url(../img/plate.png) center center no-repeat;
+    background-position-x: left;
+  }
+}
+
+.about_us__title_h2 {
+  margin-top: 165px;
+}
+
+.about_us__paragraph:not(:last-child) {
+  margin-bottom: 15px;
+}

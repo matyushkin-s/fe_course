@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 102px;
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  width: 127px;
+  height: 52px;
+  background: url(../img/Logo.svg) center center no-repeat;
+  margin-top: 50px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.menu {
+  margin-top: 65px;
+}
+
+.menu_items {
+  width: 100%;
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.menu_item__text {
+  text-decoration: none;
+  padding: 1px 2px 0;
+  box-sizing: border-box;
+  color: $color-text-black;
+
+  &:active {
+    border-top: 3px solid $menu-border-color;
+  }
+
+  &:hover {
+    border-top: 3px solid $menu-border-color;
+  }
+
+  &--active {
+    border-top: 3px solid $menu-border-color;
+  }
+}
